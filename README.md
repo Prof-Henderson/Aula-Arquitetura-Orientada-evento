@@ -21,10 +21,6 @@
 
 ✅ Add Python to PATH
 
-perl
-Copiar
-Editar
-
 4. Após instalar, verifique no terminal:
 
 ```
@@ -38,11 +34,10 @@ Baixe a versão do instalador para Windows (.exe).
 Execute o instalador normalmente.
 
 Verifique se o caminho do Erlang foi adicionado ao PATH. Exemplo:
-
-makefile
-Copiar
-Editar
+```
 C:\Program Files\erl-XX.X\bin
+```
+
 ✅ 3. Instalar o RabbitMQ
 Acesse: https://www.rabbitmq.com/install-windows.html
 
@@ -53,41 +48,32 @@ Após a instalação, o RabbitMQ será adicionado como serviço do Windows.
 ✅ 4. Iniciar o serviço do RabbitMQ
 Abra o Prompt de Comando (cmd) como administrador e execute:
 
-c
-Copiar
-Editar
+```
 net start RabbitMQ
+```
 Para parar:
-
-c
-Copiar
-Editar
+```
 net stop RabbitMQ
+```
 Verificar status:
-
-cmd
-Copiar
-Editar
+```
 sc query RabbitMQ
+```
+
 ✅ 5. Habilitar o painel de gerenciamento do RabbitMQ (opcional, mas recomendado)
 No terminal, execute:
 
-cmd
-Copiar
-Editar
+```
 rabbitmq-plugins enable rabbitmq_management
+```
 Reinicie o serviço:
-
-cmd
-Copiar
-Editar
+```
 net stop RabbitMQ
 net start RabbitMQ
+```
+
 Acesse o painel no navegador:
 
-arduino
-Copiar
-Editar
 http://localhost:15672
 Login padrão:
 
@@ -97,30 +83,23 @@ Senha: guest
 
 ✅ 6. Instalar a biblioteca pika (cliente RabbitMQ para Python)
 No terminal, digite:
-
-cmd
-Copiar
-Editar
+```
 pip install pika
+```
+
 ✅ 7. Rodar os scripts Python
 Certifique-se de que o serviço do RabbitMQ está rodando:
-
-cmd
-Copiar
-Editar
+```
 net start RabbitMQ
+```
 Navegue até a pasta onde estão os scripts Python e execute:
-
-c
-Copiar
-Editar
+```
 python produtor.py
+```
 Em outro terminal:
-
-cmd
-Copiar
-Editar
+```
 python consumidor.py
+```
 ✅ Ferramentas instaladas
 Ferramenta	Função
 Python	Interpretar os scripts
