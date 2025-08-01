@@ -27,8 +27,9 @@ Editar
 
 4. Após instalar, verifique no terminal:
 
-```cmd
+```
 python --version
+```
 ✅ 2. Instalar o Erlang
 Acesse: https://www.erlang.org/downloads
 
